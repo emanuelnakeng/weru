@@ -1,21 +1,18 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Docs from './pages/Docs';
+import Demo from './pages/Demo';
+
 function App() {
 	return (
-		<div className='App'>
-			<header className='App-header'>
-				<img src={{}} className='App-logo' alt='logo' />
-				<p>
-					Edit <code>src/App.js</code> and save to reload.
-				</p>
-				<a
-					className='App-link'
-					href='https://reactjs.org'
-					target='_blank'
-					rel='noopener noreferrer'
-				>
-					Learn React
-				</a>
-			</header>
-		</div>
+		<BrowserRouter>
+			<Routes>
+				<Route index element={<Home />} />
+				<Route path='/docs' element={<Docs />} />
+				<Route path='demo' element={<Demo />} />
+				<Route path='*' element={<Home />} />
+			</Routes>
+		</BrowserRouter>
 	);
 }
 
