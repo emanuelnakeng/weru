@@ -3,7 +3,6 @@ import { docNavigation } from '../data';
 import GettingStarted from '../components/docs/GettingStarted';
 import Requirements from '../components/docs/Requirements';
 import Installation from '../components/docs/Installation';
-import InstallationServices from '../components/docs/InstallationServices';
 import Update from '../components/docs/Update';
 import SourceStructure from '../components/docs/SourceStructure';
 import Theme from '../components/docs/Theme';
@@ -14,6 +13,7 @@ import Splash from '../components/docs/Splash';
 import Customization from '../components/docs/Customization';
 import Publishing from '../components/docs/Publishing';
 import VersionHistory from '../components/docs/VersionHistory';
+import { Link } from 'react-router-dom';
 
 const logo = require('../assets/logo.png');
 function Docs() {
@@ -31,12 +31,27 @@ function Docs() {
 			<div className='main-container'>
 				<div className='navigation-container'>
 					<ul>
-						{docNavigation.map((navItem, index) => {
+						{docNavigation.map(navItem => {
 							return (
-								<li className='nav-item-container'>
-									<a href={`#${navItem}`.toLocaleLowerCase()}>
+								<li
+									className='nav-item-container'
+									key={navItem}
+								>
+									<Link
+										onClick={() => {
+											const element =
+												document.getElementById(
+													navItem
+														.toLowerCase()
+														.replaceAll(' ', '-')
+												);
+											element?.scrollIntoView({
+												behavior: 'smooth',
+											});
+										}}
+									>
 										{navItem}
-									</a>
+									</Link>
 								</li>
 							);
 						})}
@@ -44,19 +59,18 @@ function Docs() {
 				</div>
 				<div className='scrollable-container'>
 					<GettingStarted id='get-started' />
-					<Requirements />
-					<InstallationServices />
-					<Installation />
-					<Update />
-					<SourceStructure />
-					<Theme />
-					<Fonts />
-					<AppName />
-					<AppIcon />
-					<Splash />
-					<Customization />
-					<Publishing />
-					<VersionHistory />
+					<Requirements id='requirements' />
+					<Installation id='installation' />
+					<Update id='update' />
+					<SourceStructure id='source-structure' />
+					<Theme id='theme' />
+					<Fonts id='fonts' />
+					<AppName id='app-name' />
+					<AppIcon id='app-icon' />
+					<Splash id='splash' />
+					<Customization id='customization' />
+					<Publishing id='publishing' />
+					<VersionHistory id='version-history' />
 				</div>
 			</div>
 		</div>

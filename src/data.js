@@ -1,8 +1,7 @@
 const docNavigation = [
 	'Get started',
 	'Requirements',
-	'Installation services',
-	'Installion',
+	'Installation',
 	'Update',
 	'Source structure',
 	'Theme',
@@ -10,7 +9,7 @@ const docNavigation = [
 	'App name',
 	'App icon',
 	'Splash',
-	'Customisation',
+	'Customization',
 	'Publishing',
 	'Version history',
 ];

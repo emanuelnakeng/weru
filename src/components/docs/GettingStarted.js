@@ -14,7 +14,7 @@ function GettingStarted({ id }) {
 				Support for Weru is available exclusively through Codecanyon. If
 				you need assistance, please use the <strong>email form</strong>{' '}
 				or <strong>comments</strong> section on the{' '}
-				<a href='/codecanyon'> Codecanyon</a> product page.
+				<a href='https://codecanyon.com'> Codecanyon</a> product page.
 			</p>
 			<p>
 				We hope this documentation helps you get started and make the
