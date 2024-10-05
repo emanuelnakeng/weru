@@ -1,6 +1,8 @@
-function ScreenWrap({ children }) {
+function ScreenWrap({ children, mobileBg, largeBg }) {
 	return (
-		<div className='flex flex-col w-screen items-center bg-[#0e0910] sm:bg-bg-clr'>
+		<div
+			className={`flex flex-col w-screen items-center  bg-[${mobileBg}] sm:bg-${largeBg}`}
+		>
 			{children}
 		</div>
 	);

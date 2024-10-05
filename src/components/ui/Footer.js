@@ -10,7 +10,9 @@ function Footer() {
 					</Link>
 				</li>
 				<li className='hover:text-white transition ease-in-out delay-150 underline underline-offset-2'>
-					<Link to='/docs'>Documentation</Link>
+					<Link to='/docs' target='_blank'>
+						Documentation
+					</Link>
 				</li>
 				<li className='hover:text-white transition ease-in-out delay-150 underline underline-offset-2'>
 					<Link to='/demo'>Demo</Link>

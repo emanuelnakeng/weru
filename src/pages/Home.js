@@ -8,8 +8,14 @@ import { Link } from 'react-router-dom';
 
 function Home() {
 	return (
-		<ScreenWrap>
-			<NavBar />
+		<ScreenWrap mobileBg='#0e0910' largeBg='bg-clr'>
+			<NavBar textColor='white'>
+				<img
+					src={require('../assets/logo1.png')}
+					alt='logo'
+					className='h-auto w-16 sm:w-20 object-contain'
+				/>
+			</NavBar>
 			<main className='flex flex-col w-full items-center pt-16 px-5 '>
 				<div className='flex flex-row flex-wrap w-full sm:w-4/6 '>
 					<div className='w-full flex flex-col items-center  sm:w-2/3 sm:items-start '>
@@ -34,6 +40,7 @@ function Home() {
 						</p>
 						<div className='py-10 flex flex-col gap-5 sm:flex-row'>
 							<Link
+								target='_blank'
 								to='/demo'
 								className='flex flex-row justify-center items-center gap-1 bg-boarding-clr/90 rounded-full py-2 px-6 font-medium text-base  hover:bg-accent-clr  transition ease-in-out delay-150 '
 							>
@@ -41,6 +48,7 @@ function Home() {
 								<HiArrowUpRight size={20} />
 							</Link>
 							<Link
+								target='_blank'
 								to='/docs'
 								className='border-2 rounded-full border-gray-100 py-2 px-6 font-medium text-base text-white hover:bg-gray-300 hover:border-gray-100 hover:bg-gray-100 hover:text-bg-clr transition ease-in-out delay-150 '
 							>
