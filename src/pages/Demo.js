@@ -7,7 +7,7 @@ import { AiFillStar } from 'react-icons/ai';
 
 function Demo() {
 	return (
-		<ScreenWrap mobileBg='#FFFEFD' largeBg='bg-light-clr'>
+		<ScreenWrap classProps='bg-bg-light-clr'>
 			<NavBar>
 				<h1 className='text-2xl font-semibold'>Weru</h1>
 			</NavBar>

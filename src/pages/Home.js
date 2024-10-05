@@ -8,7 +8,11 @@ import { Link } from 'react-router-dom';
 
 function Home() {
 	return (
-		<ScreenWrap mobileBg='#0e0910' largeBg='bg-clr'>
+		<ScreenWrap
+			mobileBg='#0e0910'
+			largeBg='bg-clr'
+			classProps='bg-[#0e0910] sm:bg-bg-clr'
+		>
 			<NavBar textColor='white'>
 				<img
 					src={require('../assets/logo1.png')}
@@ -67,7 +71,10 @@ function Home() {
 				<div className='w-full sm:w-4/6 py-32 flex flex-col gap-5 pl-10 sm:flex-row sm:flex-wrap sm:gap-10 sm:pl-0 '>
 					{features.map(feature => {
 						return (
-							<div className='flex flex-row items-center gap-5 sm:basis-1/4'>
+							<div
+								className='flex flex-row items-center gap-5 sm:basis-1/4'
+								key={feature}
+							>
 								<HiBadgeCheck size={26} color='#46bd61' />
 								<p className='font-medium text-lg sm:text-base text-gray-100'>
 									{feature}.
