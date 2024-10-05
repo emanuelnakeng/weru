@@ -1,18 +1,20 @@
 import { Link } from 'react-router-dom';
+import Button from './Button';
 const logo = require('../../assets/logo1.png');
 
 function NavBar() {
 	return (
-		<header className='header-container'>
-			<div className='logo-container'>
+		<header className='flex flex-col items-center justify-center h-[16vh] w-full z-50 bg-bg-clr'>
+			<nav className='flex justify-between items-center w-full sm:w-4/6 px-5'>
 				<Link to='/'>
-					<img src={logo} alt='' className='logo' />
-					<p className='logo-weru'>Weru</p>
+					<img
+						src={logo}
+						alt='logo'
+						className='h-auto w-20 object-contain'
+					/>
 				</Link>
-			</div>
-			<div className='action-container'>
-				<button>Purchase</button>
-			</div>
+				<Button>Purchase</Button>
+			</nav>
 		</header>
 	);
 }

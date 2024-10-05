@@ -15,11 +15,14 @@ const docNavigation = [
 ];
 
 const features = [
-	'Quality Code',
+	'React Native Expo',
+	'Zustand State Management',
 	'React Navigation 6.x',
 	'Dark and Light Mode',
-	'Zustand State Management',
+	'Barcode Scanner',
+	'Quality Code',
 	'Well Documented',
+	'Beginner friendly',
 	'24/7 Support',
 ];
 
