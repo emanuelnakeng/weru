@@ -44,7 +44,6 @@ function Home() {
 						</p>
 						<div className='py-10 flex flex-col gap-5 sm:flex-row'>
 							<Link
-								target='_blank'
 								to='/demo'
 								className='flex flex-row justify-center items-center gap-1 bg-boarding-clr/90 rounded-full py-2 px-6 font-medium text-base  hover:bg-accent-clr  transition ease-in-out delay-150 '
 							>
@@ -52,7 +51,6 @@ function Home() {
 								<HiArrowUpRight size={20} />
 							</Link>
 							<Link
-								target='_blank'
 								to='/docs'
 								className='border-2 rounded-full border-gray-100 py-2 px-6 font-medium text-base text-white hover:bg-gray-300 hover:border-gray-100 hover:bg-gray-100 hover:text-bg-clr transition ease-in-out delay-150 '
 							>
