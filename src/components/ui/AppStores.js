@@ -4,7 +4,7 @@ function AppStores() {
 	return (
 		<section className='text-black '>
 			<div className='container mx-auto flex items-center sm:flex-row flex-col'>
-				<div className='flex ms:ml-auto ms:mr-0 mx-auto items-center flex-shrink-0 space-x-10'>
+				<div className='flex ms:ml-auto ms:mr-0 mx-auto items-center flex-shrink-0 space-x-5 sm:space-x-10'>
 					<Link className='bg-gray-100 inline-flex py-3 px-5 rounded-lg items-center hover:bg-gray-200 focus:outline-none'>
 						<svg
 							xmlns='http://www.w3.org/2000/svg'

@@ -11,12 +11,12 @@ function Demo() {
 			<NavBar>
 				<h1 className='text-2xl font-semibold'>Weru</h1>
 			</NavBar>
-			<main className='flex flex-col w-full items-center pt-16 px-5'>
-				<div className='flex flex-col items-center pt-11 gap-5 '>
+			<main className='flex flex-col w-full items-center pt-10 px-5'>
+				<div className='flex flex-col items-center pt-8 gap-5 '>
 					<img
 						src={require('../assets/logo.png')}
 						alt='logo'
-						className='h-auto w-20 sm:w-36 object-contain '
+						className='h-auto w-24 sm:w-36 object-contain '
 					/>
 					<div className='py-20 w-full '>
 						<h1 className='text-5xl sm:text-6xl font-extrabold text-center leading-tight pb-4'>
