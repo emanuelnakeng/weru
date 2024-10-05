@@ -52,7 +52,7 @@ function Home() {
 						<img
 							src={require('../assets/iPhone-13-Pro-Front (1).png')}
 							alt='hero screen'
-							className='w-2/4 sm:w-3/4 h-auto'
+							className='w-4/5 sm:w-3/4 h-auto'
 						/>
 					</div>
 				</div>
@@ -61,7 +61,7 @@ function Home() {
 						return (
 							<div className='flex flex-row items-center gap-5 sm:basis-1/4'>
 								<HiBadgeCheck size={26} color='#46bd61' />
-								<p className='font-medium text-base text-gray-100'>
+								<p className='font-medium text-lg sm:text-base text-gray-100'>
 									{feature}.
 								</p>
 							</div>
