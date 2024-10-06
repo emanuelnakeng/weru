@@ -21,7 +21,7 @@ function Demo() {
 						Over 10 million customers use <strong>Weru!</strong>
 					</p>
 					<div className=' w-full '>
-						<h1 className='text-5xl sm:text-6xl font-extrabold text-center leading-relaxed pb-5 sm:pb-10'>
+						<h1 className='text-5xl sm:text-6xl font-extrabold text-center leading-normal pb-5 sm:pb-10'>
 							Your loyalty made simple
 						</h1>
 						<p className='text-base font-medium leading-relaxed text-center text-bg-clr px-10 pb-10'>
@@ -33,10 +33,10 @@ function Demo() {
 					</div>
 					<AppStores />
 				</div>
-				<div className='w-full sm:w-3/6'>
+				<div className='w-full sm:w-3/6 h-auto'>
 					<FeaturedImage />
 				</div>
-				<div className='flex flex-col items-center pt-20 sm:flex-row sm:w-3/6 sm:items-start sm:justify-center gap-20 '>
+				<div className='flex flex-col items-center pt-20 sm:flex-row sm:w-3/6 sm:items-start sm:justify-center'>
 					<div className='flex justify-center w-full sm:w-2/4 sm:justify-end'>
 						<img
 							src={require('../assets/iPhone-13-Pro-Front.png')}
@@ -45,10 +45,10 @@ function Demo() {
 						/>
 					</div>
 					<div className='flex flex-col items-center sm:items-start sm:w-2/4 mt-5 '>
-						<h2 className='text-3xl font-bold py-10 text-bg-clr'>
+						<h2 className='text-3xl font-bold py-5 text-bg-clr'>
 							Unlimited cards
 						</h2>
-						<p className='text-base font-normal leading-relaxed text-gray-700 px-10 pb-10 w-3/4 text-center sm:px-0 sm:text-left'>
+						<p className='text-base font-normal leading-relaxed text-gray-700 px-5 pb-10 w-3/4 text-center sm:px-0 sm:text-left'>
 							Supports multiple cards such as loyalty points,
 							membership cards, coupons, gift cards, tickets,
 							boarding passes, and credit cards. You can also add
@@ -62,12 +62,12 @@ function Demo() {
 						</a>
 					</div>
 				</div>
-				<div className='flex flex-col items-center pt-20 sm:flex-row sm:w-3/6 sm:items-start sm:justify-center gap-20 '>
-					<div className='flex flex-col items-center sm:items-end  sm:w-2/4 mt-5 '>
-						<h2 className='text-3xl font-bold py-10 text-bg-clr sm:text-left'>
+				<div className='flex flex-col items-center pt-10 sm:flex-row sm:w-3/6 sm:items-start sm:justify-center gap-10 '>
+					<div className='flex flex-col items-center sm:items-end sm:w-2/4 mt-5 '>
+						<h2 className='text-3xl font-bold pb-5 text-bg-clr sm:text-left'>
 							Dark and light mode
 						</h2>
-						<p className='text-base font-normal leading-relaxed text-gray-700 px-10 pb-10 w-3/4 text-center sm:px-0 sm:text-left'>
+						<p className='text-base font-normal leading-relaxed text-gray-700 px-5 pb-10 w-3/4 text-center sm:px-0 sm:text-left'>
 							Offers both dark and light modes for you to choose
 							based on your preference or lighting conditions -
 							Experience the convenience of managing all your
@@ -89,8 +89,8 @@ function Demo() {
 						/>
 					</div>
 				</div>
-				<div className='py-5 flex flex-col items-center w-full sm:w-4/6'>
-					<h2 className='text-3xl font-bold py-14 w-4/5 text-center leading-tight text-bg-clr '>
+				<div className='flex flex-col items-center w-full sm:w-4/6'>
+					<h2 className='text-3xl font-bold py-10 w-4/5 text-center leading-relaxed text-bg-clr '>
 						Used by more than 10 million customers
 					</h2>
 					<div className='flex flex-col gap-12 items-center'>
