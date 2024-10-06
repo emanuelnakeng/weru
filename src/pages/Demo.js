@@ -33,7 +33,7 @@ function Demo() {
 					</div>
 					<AppStores />
 				</div>
-				<div className='w-full sm:w-3/6 h-[45vh] pt-5'>
+				<div className='w-full sm:w-3/6 h-[45vh] pt-10 sm:pt:0'>
 					<FeaturedImage />
 				</div>
 				<div className='flex flex-col items-center pt-20 sm:flex-row sm:w-3/6 sm:items-start sm:justify-center sm:space-x-20'>
