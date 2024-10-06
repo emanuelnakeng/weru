@@ -33,10 +33,10 @@ function Demo() {
 					</div>
 					<AppStores />
 				</div>
-				<div className='w-full sm:w-3/6 h-[45vh] pt-15 sm:pt:0'>
+				<div className='w-full sm:w-3/6 h-[45vh] pt-10 sm:pt:0'>
 					<FeaturedImage />
 				</div>
-				<div className='flex flex-col items-center pt-20 sm:flex-row sm:w-3/6 sm:items-start sm:justify-center sm:space-x-20'>
+				<div className='flex flex-col items-center pt-10 sm:flex-row sm:w-3/6 sm:items-start sm:justify-center sm:space-x-20'>
 					<div className='flex justify-center w-full sm:w-2/4 sm:justify-end'>
 						<img
 							src={require('../assets/iPhone-13-Pro-Front.png')}
