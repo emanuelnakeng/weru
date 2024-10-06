@@ -5,7 +5,7 @@ function FeaturedImage() {
 		>
 			<div className='flex flex-col justify-center items-center bg-gray-800 bg-opacity-70 w-full h-full rounded-3xl '>
 				<div className='sm:w-4/6 px-5'>
-					<h1 className='text-4xl sm:text-4xl font-extrabold text-center leading-relaxed '>
+					<h1 className='text-3xl sm:text-4xl font-extrabold text-center sm:leading-loose '>
 						Discover convenience and ease of use
 					</h1>
 				</div>

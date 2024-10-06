@@ -26,7 +26,7 @@ function Docs() {
 				borderColor='border-accent-clr'
 				textColor='black'
 			/>
-			<main className='flex flex-col w-full sm:w-4/6 md:flex-row my-10 gap-5'>
+			<main className='flex flex-col w-full sm:w-4/6 md:flex-row my-5 gap-5'>
 				<div className='py-10 bg-white mx-3.5 rounded-xl px-5 mb-10 sm:px-10 sm:w-1/4 sm:sticky top-[2rem] sm:h-fit'>
 					<ul>
 						{docNavigation.map(navItem => {
