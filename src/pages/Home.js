@@ -13,13 +13,7 @@ function Home() {
 			largeBg='bg-clr'
 			classProps='bg-[#0e0910] sm:bg-bg-clr'
 		>
-			<NavBar textColor='white'>
-				<img
-					src={require('../assets/logo1.png')}
-					alt='logo'
-					className='h-auto w-16 sm:w-20 object-contain'
-				/>
-			</NavBar>
+			<NavBar textColor='white' borderColor='border-accent-clr' />
 			<main className='flex flex-col w-full items-center pt-16 px-5 '>
 				<div className='flex flex-row flex-wrap w-full sm:w-4/6 '>
 					<div className='w-full flex flex-col items-center  sm:w-2/3 sm:items-start '>
@@ -27,7 +21,7 @@ function Home() {
 							Featured on{' '}
 							<Link
 								target='_blank'
-								href='https://www.codecanyon.net'
+								to='https://www.codecanyon.net'
 							>
 								<span className='hover:underline font-bold hover:text-accent-clr underline-offset-2'>
 									Codecanyon
@@ -60,9 +54,9 @@ function Home() {
 					</div>
 					<div className='flex justify-center sm:justify-end w-full sm:w-1/3  '>
 						<img
-							src={require('../assets/iPhone-13-Pro-Front (1).png')}
+							src={require('../assets/iPhone-13-Pro.png')}
 							alt='hero screen'
-							className='w-4/5 sm:w-3/4 h-auto'
+							className='w-52 sm:w-3/4 h-auto object-contain'
 						/>
 					</div>
 				</div>

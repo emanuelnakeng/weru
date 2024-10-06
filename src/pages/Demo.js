@@ -4,67 +4,99 @@ import AppStores from '../components/ui/AppStores';
 import Footer from '../components/ui/Footer';
 import { reviews } from '../data';
 import { AiFillStar } from 'react-icons/ai';
+import FeaturedImage from '../components/ui/FeaturedImage';
 
 function Demo() {
 	return (
 		<ScreenWrap classProps='bg-bg-light-clr'>
-			<NavBar>
-				<h1 className='text-2xl font-semibold'>Weru</h1>
-			</NavBar>
-			<main className='flex flex-col w-full items-center pt-10 px-5'>
-				<div className='flex flex-col items-center pt-8 gap-5 '>
-					<img
-						src={require('../assets/logo.png')}
-						alt='logo'
-						className='h-auto w-24 sm:w-36 object-contain '
-					/>
-					<div className='py-20 w-full '>
-						<h1 className='text-5xl sm:text-6xl font-extrabold text-center leading-tight pb-4'>
+			<NavBar
+				darkLogo
+				borderColor='border-bg-clr'
+				textColor='white'
+				background
+			/>
+			<main className='flex flex-col w-full items-center pt-10 px-5 gap-10'>
+				<div className='flex flex-col items-center pt-5 h-[65vh] gap-5'>
+					<p className='bg-boarding-clr rounded-full px-4 py-2 text-sm font-medium mb-5'>
+						Over 10 million customers use <strong>Weru!</strong>
+					</p>
+					<div className=' w-full '>
+						<h1 className='text-5xl sm:text-6xl font-extrabold text-center leading-relaxed pb-5 sm:pb-10'>
 							Your loyalty made simple
 						</h1>
-						<p className='text-base font-normal  leading-normal text-center'>
-							With Weru, all your loyalty cards are convenience
-							stored in one place, earn points and enjoy exclusive{' '}
-							<br className='hidden sm:block' />
-							offers - Offering both convenience and ease of use.
+						<p className='text-base font-medium leading-relaxed text-center text-bg-clr px-10 pb-10'>
+							With Weru, you can conveniently store all your
+							loyalty cards in one place, making it easy{' '}
+							<br className='hidden sm:block ' />
+							to earn points and access exclusive offers.
 						</p>
 					</div>
 					<AppStores />
 				</div>
-				<div>
-					<div>
-						<h2 className='text-3xl font-bold py-10'>
-							Unlimited cards
-						</h2>
-					</div>
-					<div className='flex justify-center sm:justify-end w-full sm:w-1/3  '>
+				<div className='w-full sm:w-3/6'>
+					<FeaturedImage />
+				</div>
+				<div className='flex flex-col items-center pt-20 sm:flex-row sm:w-3/6 sm:items-start sm:justify-center gap-20 '>
+					<div className='flex justify-center w-full sm:w-2/4 sm:justify-end'>
 						<img
 							src={require('../assets/iPhone-13-Pro-Front.png')}
-							alt=''
-							className='w-4/5 sm:w-3/4 h-auto'
+							alt='Cards'
+							className='w-52 sm:w-3/5 h-auto object-contain'
 						/>
+					</div>
+					<div className='flex flex-col items-center sm:items-start sm:w-2/4 mt-5 '>
+						<h2 className='text-3xl font-bold py-10 text-bg-clr'>
+							Unlimited cards
+						</h2>
+						<p className='text-base font-normal leading-relaxed text-gray-700 px-10 pb-10 w-3/4 text-center sm:px-0 sm:text-left'>
+							Supports multiple cards such as loyalty points,
+							membership cards, coupons, gift cards, tickets,
+							boarding passes, and credit cards. You can also add
+							your own custom cards.
+						</p>
+						<a
+							href='/'
+							className='text-base font-normal leading-relaxed text-gray-600 underline hover:text-accent-clr underline-offset-2'
+						>
+							Learn more
+						</a>
 					</div>
 				</div>
-				<div>
-					<div className='flex justify-center sm:justify-end w-full sm:w-1/3  '>
-						<img
-							src={require('../assets/iPhone-13-Pro-Front (5).png')}
-							alt=''
-							className='w-4/5 sm:w-3/4 h-auto'
-						/>
-					</div>
-					<div>
-						<h2 className='text-3xl font-bold py-10'>
+				<div className='flex flex-col items-center pt-20 sm:flex-row sm:w-3/6 sm:items-start sm:justify-center gap-20 '>
+					<div className='flex flex-col items-center sm:items-end  sm:w-2/4 mt-5 '>
+						<h2 className='text-3xl font-bold py-10 text-bg-clr sm:text-left'>
 							Dark and light mode
 						</h2>
+						<p className='text-base font-normal leading-relaxed text-gray-700 px-10 pb-10 w-3/4 text-center sm:px-0 sm:text-left'>
+							Offers both dark and light modes for you to choose
+							based on your preference or lighting conditions -
+							Experience the convenience of managing all your
+							cards in one place. Download Weru today and simplify
+							your life
+						</p>
+						<a
+							href='/'
+							className='text-base font-normal leading-relaxed text-gray-600 underline hover:text-accent-clr underline-offset-2'
+						>
+							Learn more
+						</a>
+					</div>
+					<div className='flex justify-center w-full sm:w-2/4 sm:justify-start '>
+						<img
+							src={require('../assets/iPhone-13-Pro-Front (5).png')}
+							alt='dark and light'
+							className='w-52 sm:w-3/5 h-auto object-contain'
+						/>
 					</div>
 				</div>
-				<div className='py-20 flex flex-col items-center w-full sm:w-4/6'>
-					<h2 className='text-3xl font-bold py-10'>Reviews</h2>
+				<div className='py-5 flex flex-col items-center w-full sm:w-4/6'>
+					<h2 className='text-3xl font-bold py-14 w-4/5 text-center leading-tight text-bg-clr '>
+						Used by more than 10 million customers
+					</h2>
 					<div className='flex flex-col gap-12 items-center'>
 						{reviews.map((review, index) => {
 							return (
-								<article className='bg-gray-100 rounded-2xl px-10 py-10 sm:w-3/6'>
+								<article className='bg-white rounded-2xl px-10 py-10 sm:w-4/6'>
 									<div className='flex gap-2 pb-5'>
 										<AiFillStar size={22} color='orange' />
 										<AiFillStar size={22} color='orange' />
@@ -72,10 +104,10 @@ function Demo() {
 										<AiFillStar size={22} color='orange' />
 										<AiFillStar size={22} color='orange' />
 									</div>
-									<h3 className='text-base'>
+									<h3 className='text-base text-bg-clr'>
 										{review.review}
 									</h3>
-									<p className='font-medium '>
+									<p className='font-semibold text-bg-clr py-2'>
 										— {review.reviewer}
 									</p>
 								</article>
@@ -83,25 +115,31 @@ function Demo() {
 						})}
 					</div>
 				</div>
+				<div className='py-5 pb-10 flex flex-col items-center w-full sm:w-4/6'>
+					<h2 className='text-3xl font-bold py-14 w-4/5 text-center leading-tight'>
+						Our partners
+					</h2>
+					<div className='flex gap-10 py-5 w-full justify-center sm:gap-20'>
+						<img
+							src={require('../assets/nike.png')}
+							alt='nike logo'
+							className='w-20 h-20 object-contain'
+						/>
+						<img
+							src={require('../assets/dominos-logo.png')}
+							alt='dominos logo'
+							className='w-20 h-20 object-contain'
+						/>
+						<img
+							src={require('../assets/target 2.png')}
+							alt='target logo'
+							className='w-20 h-20 object-contain'
+						/>
+					</div>
+				</div>
 			</main>
 			<Footer />
 		</ScreenWrap>
-		// <ScreenWrap>
-		// 	<NavBarDemo />
-		// 	<main className='flex flex-col w-full items-center pt-16 px-5 '>
-		// 		<div className='h-screen'>
-		// 			<div >
-		// 				<img src='' alt='' />
-		// 			</div>
-		// 			<div>
-		// 				<h1 className='text-white font-bold text-5xl'>
-		// 					All your loyalty cards in one app
-		// 				</h1>
-		// 			</div>
-		// 			<div></div>
-		// 		</div>
-		// 	</main>
-		// </ScreenWrap>
 	);
 }
 export default Demo;

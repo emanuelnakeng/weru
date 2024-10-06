@@ -1,9 +1,13 @@
 import { Link } from 'react-router-dom';
 
-function Button({ children, textColor }) {
+function Button({ children, textColor, to, borderColor, background }) {
 	return (
 		<Link
-			className={`border-2 border-accent-clr py-3 px-6 rounded-full text-${textColor} font-medium text-base ' target='_blank' to='https://www.codecanyon.net`}
+			to={to}
+			target='_blank'
+			className={`border-2 ${borderColor} py-3 px-6 rounded-full text-${textColor} font-medium text-base ${
+				background ? 'bg-bg-clr' : ''
+			} `}
 		>
 			{children}
 		</Link>

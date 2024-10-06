@@ -4,10 +4,9 @@ function AppStores() {
 	return (
 		<section className='text-black '>
 			<div className='container mx-auto flex items-center sm:flex-row flex-col'>
-				<div className='flex flex-wrap ms:ml-auto ms:mr-0 mx-auto justify-center flex-shrink-0 space-x-5 sm:space-x-10 gap-10'>
-					<Link className='bg-gray-100 flex  py-3 px-10 rounded-lg items-center hover:bg-gray-200 focus:outline-none w-1/2 '>
+				<div className='flex flex-col ms:ml-auto ms:mr-0 mx-auto items-center flex-shrink-0 space-y-5'>
+					<Link className='bg-gray-200 inline-flex py-2 px-9 rounded-lg items-center hover:bg-gray-300 focus:outline-none w-full '>
 						<svg
-							xmlns='http://www.w3.org/2000/svg'
 							fill='currentColor'
 							className='w-6 h-6'
 							viewBox='0 0 512 512'
@@ -23,9 +22,8 @@ function AppStores() {
 							</span>
 						</span>
 					</Link>
-					<Link className='bg-gray-100 flex  py-3 px-10 rounded-lg items-center hover:bg-gray-200 focus:outline-none w-1/2'>
+					<Link className='bg-gray-200 inline-flex py-2 px-9 rounded-lg items-center hover:bg-gray-300 focus:outline-none w-full '>
 						<svg
-							xmlns='http://www.w3.org/2000/svg'
 							fill='currentColor'
 							className='w-6 h-6'
 							viewBox='0 0 305 305'
