@@ -36,7 +36,7 @@ function Demo() {
 				<div className='w-full sm:w-3/6 h-auto'>
 					<FeaturedImage />
 				</div>
-				<div className='flex flex-col items-center pt-20 sm:flex-row sm:w-3/6 sm:items-start sm:justify-center'>
+				<div className='flex flex-col items-center pt-20 sm:flex-row sm:w-3/6 sm:items-start sm:justify-center sm:space-x-20'>
 					<div className='flex justify-center w-full sm:w-2/4 sm:justify-end'>
 						<img
 							src={require('../assets/iPhone-13-Pro-Front.png')}
@@ -62,7 +62,7 @@ function Demo() {
 						</a>
 					</div>
 				</div>
-				<div className='flex flex-col items-center pt-10 sm:flex-row sm:w-3/6 sm:items-start sm:justify-center gap-10 '>
+				<div className='flex flex-col items-center pt-10 sm:flex-row sm:w-3/6 sm:items-start sm:justify-center sm:space-x-20'>
 					<div className='flex flex-col items-center sm:items-end sm:w-2/4 mt-5 '>
 						<h2 className='text-3xl font-bold pb-5 text-bg-clr sm:text-left'>
 							Dark and light mode
@@ -85,7 +85,7 @@ function Demo() {
 						<img
 							src={require('../assets/iPhone-13-Pro-Front (5).png')}
 							alt='dark and light'
-							className='w-52 sm:w-3/5 h-auto object-contain'
+							className='w-52 sm:w-3/5 h-auto object-contain pt-5'
 						/>
 					</div>
 				</div>
