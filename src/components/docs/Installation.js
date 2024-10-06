@@ -1,18 +1,19 @@
 import CodeBlock from '../ui/CodeBlock';
+import DocsSection from '../ui/DocsSection';
 
 function Installation({ id }) {
 	return (
-		<div id={id} className='section-container'>
-			<h2>Installation</h2>
+		<DocsSection id={id}>
+			<h2 className='text-3xl font-bold text-bg-clr'>Installation</h2>
 			<p>
 				We understand that a smooth installation process is crucial for
 				a seamless experience, this installation guide is designed to
 				make the process as straightforward and stress-free as possible.
 			</p>
-			<h4>1 - Install Node.js</h4>
+			<h4 className='font-semibold'>1 - Install Node.js</h4>
 			<p>React Native and Expo require Node.js.</p>
-			<h4>Steps: </h4>
-			<ul>
+			<h4 className='font-semibold'>Steps: </h4>
+			<ul className='ml-10 list-disc'>
 				<li>
 					Go to the{' '}
 					<a href='https://nodejs.org/'>Node.js download page.</a>
@@ -31,13 +32,13 @@ function Installation({ id }) {
 				</li>
 			</ul>
 			<CodeBlock code='node -v' />
-			<h4>2 - Install Dependancies</h4>
+			<h4 className='font-semibold'>2 - Install Dependancies</h4>
 			<p>Install dependencies for various functionalities or tools.</p>
-			<h4>Steps: </h4>
+			<h4 className='font-semibold'>Steps: </h4>
 			<ul>
-				<li>Navigate to the project</li>
+				<li>Navigate to downloaded source folder</li>
 			</ul>
-			<CodeBlock code='cd /project' />
+			<CodeBlock code='cd /source' />
 			<ul>
 				<li>Install dependencies</li>
 			</ul>
@@ -46,7 +47,7 @@ function Installation({ id }) {
 				<li>Start development server</li>
 			</ul>
 			<CodeBlock code='npx expo start' />
-		</div>
+		</DocsSection>
 	);
 }
 export default Installation;

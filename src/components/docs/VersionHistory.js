@@ -1,10 +1,12 @@
+import DocsSection from '../ui/DocsSection';
+
 function VersionHistory({ id }) {
 	return (
-		<div id={id} className='section-container'>
-			<h2>Version History</h2>
-			<p>Initial release - September 2024</p>
+		<DocsSection id={id}>
+			<h2 className='text-3xl font-bold text-bg-clr'>Version History</h2>
+			<p>Initial release - October 2024</p>
 			<p>Version 1.0.0</p>
-		</div>
+		</DocsSection>
 	);
 }
 export default VersionHistory;

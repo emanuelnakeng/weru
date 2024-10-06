@@ -1,11 +1,12 @@
 import CodeBlock from '../ui/CodeBlock';
+import DocsSection from '../ui/DocsSection';
 function AppIcon({ id }) {
 	return (
-		<div id={id} className='section-container'>
-			<h2>App Icon</h2>
+		<DocsSection id={id}>
+			<h2 className='text-3xl font-bold text-bg-clr'>App Icon</h2>
 			<p>To update the app icon, follow the steps below</p>
-			<h4>Steps</h4>
-			<ul>
+			<h4 className='font-semibold'>Steps</h4>
+			<ul className='ml-10 list-disc'>
 				<li>
 					Create various sizes and formats of your logo to ensure
 					compatibility across different devices and platforms here:{' '}
@@ -16,7 +17,7 @@ function AppIcon({ id }) {
 				<li>Save all modified files to apply the changes.</li>
 			</ul>
 			<CodeBlock code='"expo": "icon" : "./assets/icon.png"' />
-		</div>
+		</DocsSection>
 	);
 }
 export default AppIcon;

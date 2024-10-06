@@ -1,7 +1,9 @@
+import DocsSection from '../ui/DocsSection';
+
 function GettingStarted({ id }) {
 	return (
-		<div id={id} className='section-container'>
-			<h2>Getting Started</h2>
+		<DocsSection id={id}>
+			<h2 className='text-3xl font-bold text-bg-clr'>Getting Started</h2>
 			<p>Thank you for purchasing our template. 🔥</p>
 			<p>
 				This documentation will walk you through the installation
@@ -12,15 +14,23 @@ function GettingStarted({ id }) {
 			</p>
 			<p>
 				Support for Weru is available exclusively through Codecanyon. If
-				you need assistance, please use the <strong>email form</strong>{' '}
-				or <strong>comments</strong> section on the{' '}
-				<a href='https://codecanyon.com'> Codecanyon</a> product page.
+				you need assistance, please use the{' '}
+				<strong className='font-bold'>email form</strong> or{' '}
+				<strong className='font-bold'>comments</strong> section on the{' '}
+				<a
+					className='text-accent-clr font-bold'
+					href='https://codecanyon.net'
+				>
+					{' '}
+					Codecanyon
+				</a>{' '}
+				product page.
 			</p>
 			<p>
 				We hope this documentation helps you get started and make the
 				most of your new app!
 			</p>
-		</div>
+		</DocsSection>
 	);
 }
 export default GettingStarted;

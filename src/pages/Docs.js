@@ -14,27 +14,25 @@ import Customization from '../components/docs/Customization';
 import Publishing from '../components/docs/Publishing';
 import VersionHistory from '../components/docs/VersionHistory';
 import { Link } from 'react-router-dom';
+import ScreenWrap from '../components/ui/ScreenWrap';
+import Footer from '../components/ui/Footer';
+import NavBar from '../components/ui/NavBar';
 
-const logo = require('../assets/logo.png');
 function Docs() {
 	return (
-		<div className='docs-container'>
-			<header className='docs-header-container'>
-				<a href='/'>
-					<img src={logo} alt='logo' className='docs-image-logo' />
-				</a>
-				<div className='header-label-container'>
-					<h1>Weru Documentation</h1>
-					<p>A smart loyalty wallet by RNCode</p>
-				</div>
-			</header>
-			<div className='main-container'>
-				<div className='navigation-container'>
+		<ScreenWrap classProps='bg-bg-light-clr'>
+			<NavBar
+				darkLogo
+				borderColor='border-accent-clr'
+				textColor='black'
+			/>
+			<main className='flex flex-col w-full sm:w-4/6 md:flex-row my-10 gap-5'>
+				<div className='py-10 bg-white mx-3.5 rounded-xl px-5 mb-10 sm:px-10 sm:w-1/4 sm:sticky top-[2rem] sm:h-fit'>
 					<ul>
 						{docNavigation.map(navItem => {
 							return (
 								<li
-									className='nav-item-container'
+									className='font-medium text-gray-500 mb-5 hover:text-accent-clr hover:underline underline-offset-2'
 									key={navItem}
 								>
 									<Link
@@ -57,7 +55,7 @@ function Docs() {
 						})}
 					</ul>
 				</div>
-				<div className='scrollable-container'>
+				<div className='px-5 sm:w-3/4'>
 					<GettingStarted id='get-started' />
 					<Requirements id='requirements' />
 					<Installation id='installation' />
@@ -72,8 +70,9 @@ function Docs() {
 					<Publishing id='publishing' />
 					<VersionHistory id='version-history' />
 				</div>
-			</div>
-		</div>
+			</main>
+			<Footer />
+		</ScreenWrap>
 	);
 }
 export default Docs;

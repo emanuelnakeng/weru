@@ -1,10 +1,11 @@
 import Block from '../ui/Block';
 import CodeBlock from '../ui/CodeBlock';
+import DocsSection from '../ui/DocsSection';
 
 function Publishing({ id }) {
 	return (
-		<div id={id} className='section-container'>
-			<h2>Publishing</h2>
+		<DocsSection id={id}>
+			<h2 className='text-3xl font-bold text-bg-clr'>Publishing</h2>
 			<p>
 				By following these steps, you can effectively publish your own
 				app and make it available to users on both Android and iOS
@@ -12,16 +13,6 @@ function Publishing({ id }) {
 				instructions, feel free to us on our{' '}
 				<a href='https://www.codecanyon.com'>Codecanyon</a> support.
 			</p>
-			<iframe
-				width='560'
-				height='315'
-				src='https://www.youtube.com/embed/-KZjr576tuE?si=_guQfotw1YP0FjYb'
-				title='YouTube video player'
-				frameborder='0'
-				allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-				referrerpolicy='strict-origin-when-cross-origin'
-				allowfullscreen
-			></iframe>
 			<p>
 				A paid developer account is required to publish your app-{' '}
 				<a href='https://play.google.com/apps/publish/signup/'>
@@ -38,8 +29,8 @@ function Publishing({ id }) {
 				ejected to a bare workflow
 			</Block>
 			<div className='sectionInner'>
-				<h4>Step 1 : Test Your App</h4>
-				<ul>
+				<h4 className='font-semibold'>Step 1 : Test Your App</h4>
+				<ul className='ml-10 list-disc'>
 					<li>
 						<strong>Run on Device:</strong> Use Expo Go to test your
 						app on a physical device. You can scan the QR code from
@@ -52,8 +43,8 @@ function Publishing({ id }) {
 				</ul>
 			</div>
 			<div className='sectionInner'>
-				<h4>Step 2 : Build Your App</h4>
-				<ul>
+				<h4 className='font-semibold'>Step 2 : Build Your App</h4>
+				<ul className='ml-10 list-disc'>
 					<li>Initialize the EAS Build configuration:</li>
 				</ul>
 				<CodeBlock code='eas build:configure' />
@@ -73,8 +64,8 @@ function Publishing({ id }) {
 				</p>
 			</div>
 			<div className='sectionInner'>
-				<h4>Step 4 : Submit to store</h4>
-				<ul>
+				<h4 className='font-semibold'>Step 4 : Submit to store</h4>
+				<ul className='ml-10 list-disc'>
 					<li>Submitting your app using CI</li>
 				</ul>
 				<p>
@@ -86,7 +77,7 @@ function Publishing({ id }) {
 				<CodeBlock code='eas submit -p ios --latest --profile example' />
 				<CodeBlock code='eas submit -p android --profile example' />
 			</div>
-		</div>
+		</DocsSection>
 	);
 }
 export default Publishing;

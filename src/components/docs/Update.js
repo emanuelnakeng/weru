@@ -1,9 +1,10 @@
 import Block from '../ui/Block';
+import DocsSection from '../ui/DocsSection';
 
 function Update({ id }) {
 	return (
-		<div id={id} className='section-container'>
-			<h2>Update</h2>
+		<DocsSection id={id}>
+			<h2 className='text-3xl font-bold text-bg-clr'>Update</h2>
 			<p>
 				This section guides you through updating your current version to
 				newer releases.
@@ -13,17 +14,17 @@ function Update({ id }) {
 				<strong>changelog</strong> of the product to understand and
 				accept what the new update brings.
 			</Block>
-			<h4>Step 1 : Create a backup</h4>
+			<h4 className='font-semibold'>Step 1 : Create a backup</h4>
 			<p>
 				Before updating the source code, it's a good idea to ensure
 				proper backups are in place.
 			</p>
-			<ul>
+			<ul className='list-disc ml-10'>
 				<li>Backup your files</li>
-				<li>Backup any customizations</li>
+				<li>Backup custom code</li>
 			</ul>
-			<h4>Step 2 : Update files</h4>
-			<ul>
+			<h4 className='font-semibold'>Step 2 : Update files</h4>
+			<ul className='list-disc ml-10'>
 				<li>Download & unzip the latest source code</li>
 				<li>
 					Navigate to the `source code` folder, copy the update files
@@ -34,7 +35,7 @@ function Update({ id }) {
 					read README.md
 				</li>
 			</ul>
-		</div>
+		</DocsSection>
 	);
 }
 export default Update;
